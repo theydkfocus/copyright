@@ -1,0 +1,94 @@
+{
+  "name": "@pyyupsk/npm-ts-template",
+  "version": "0.1.2",
+  "description": "A TypeScript library template with modern tooling",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.mts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.mts",
+        "default": "./dist/index.mjs"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    }
+  },
+  "files": [
+    "dist",
+    "CHANGELOG.md",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsdown",
+    "dev": "tsdown --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "lint": "biome check . && eslint",
+    "lint:fix": "biome check --write . && eslint --fix",
+    "lint:docs": "eslint",
+    "format": "biome format --write .",
+    "typecheck": "tsc --noEmit",
+    "knip": "knip",
+    "prepare": "lefthook install",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "typescript",
+    "template",
+    "npm",
+    "library",
+    "bun",
+    "biome",
+    "vitest",
+    "changesets",
+    "esm",
+    "cjs"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pyyupsk/npm-ts-template.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pyyupsk/npm-ts-template/issues"
+  },
+  "homepage": "https://github.com/pyyupsk/npm-ts-template#readme",
+  "devDependencies": {
+    "@biomejs/biome": "^2.3.11",
+    "@tsconfig/strictest": "^2.0.8",
+    "@commitlint/cli": "^20.3.1",
+    "@commitlint/config-conventional": "^20.3.1",
+    "@commitlint/types": "^20.3.1",
+    "@eslint/js": "^9.39.2",
+    "@vitest/coverage-v8": "^4.0.17",
+    "eslint": "^9.39.2",
+    "eslint-plugin-jsdoc": "^62.0.0",
+    "eslint-plugin-sonarjs": "^3.0.5",
+    "globals": "^17.0.0",
+    "jiti": "^2.6.1",
+    "knip": "^5.81.0",
+    "lefthook": "^2.0.15",
+    "markdownlint-cli2": "^0.20.0",
+    "tsdown": "^0.20.0-beta.3",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.53.0",
+    "vitepress": "^1.6.4",
+    "vitest": "^4.0.17"
+  },
+  "overrides": {
+    "esbuild": "^0.25.0"
+  }
+}
