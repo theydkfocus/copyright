@@ -1,6 +1,6 @@
 # npm-ts-template
 
-[![CI](https://github.com/pyyupsk/npm-ts-template/actions/workflows/ci.yml/badge.svg)](https://github.com/pyyupsk/npm-ts-template/actions/workflows/ci.yml)
+[![CI](https://github.com/pyyupsk/copyright/actions/workflows/ci.yml/badge.svg)](https://github.com/pyyupsk/copyright/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=pyyupsk_npm-ts-template&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=pyyupsk_npm-ts-template)
 
@@ -8,7 +8,7 @@ A zero-config TypeScript library template with modern tooling. Start building yo
 
 ## Quick Start
 
-1. Click **[Use this template](https://github.com/pyyupsk/npm-ts-template/generate)** to create your repository
+1. Click **[Use this template](https://github.com/pyyupsk/copyright/generate)** to create your repository
 2. Clone and install:
 
    ```bash

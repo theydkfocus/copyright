@@ -38,7 +38,7 @@ Creates a file in `.changeset/`:
 
 ```markdown
 ---
-"@pyyupsk/npm-ts-template": minor
+"@pyyupsk/copyright": minor
 ---
 
 Added new feature
@@ -50,7 +50,7 @@ Edit the changeset file with a brief description of changes:
 
 ```markdown
 ---
-"@pyyupsk/npm-ts-template": minor
+"@pyyupsk/copyright": minor
 ---
 
 - Added new feature X for better performance
@@ -118,7 +118,7 @@ Changesets generates the changelog automatically:
 
 ```markdown
 ---
-"@pyyupsk/npm-ts-template": patch
+"@pyyupsk/copyright": patch
 ---
 
 - Fixed null pointer error in parse function
@@ -129,7 +129,7 @@ Changesets generates the changelog automatically:
 
 ```markdown
 ---
-"@pyyupsk/npm-ts-template": minor
+"@pyyupsk/copyright": minor
 ---
 
 - Added `format` option to customize output
@@ -140,7 +140,7 @@ Changesets generates the changelog automatically:
 
 ```markdown
 ---
-"@pyyupsk/npm-ts-template": major
+"@pyyupsk/copyright": major
 ---
 
 - **BREAKING:** Renamed `parse` to `parseInput`

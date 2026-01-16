@@ -55,7 +55,7 @@ export default defineConfig({
     ],
 
     socialLinks: [
-      { icon: "github", link: "https://github.com/pyyupsk/npm-ts-template" },
+      { icon: "github", link: "https://github.com/pyyupsk/copyright" },
     ],
 
     footer: {

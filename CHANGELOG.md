@@ -25,7 +25,7 @@ All notable changes to this project will be documented in this file.
 
 - *(ci)* Configure npm auth for publishing
 - *(ci)* Pass npm token via env variable, push tags after publish
-- *(ci)* Resolve release workflow issues ([#3](https://github.com/pyyupsk/npm-ts-template/issues/3))
+- *(ci)* Resolve release workflow issues ([#3](https://github.com/pyyupsk/copyright/issues/3))
 - *(deps)* Override esbuild to fix security vulnerability
 - *(ci)* Wrap version command in bash for shell operators
 - *(ci)* Use single quotes for bash command
