@@ -58,7 +58,7 @@ export interface TemplateContext {
 /**
  * Map of template variable names to resolver functions.
  */
-export const TEMPLATE_VARS: Record<string, (ctx: TemplateContext) => string> = {
+const TEMPLATE_VARS: Record<string, (ctx: TemplateContext) => string> = {
   symbol: () => "\u00A9",
   year: (ctx) => formatYearRange(ctx.startYear, ctx.endYear),
   owner: (ctx) => ctx.owner,
